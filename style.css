@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #263138;
+}
+
+header {
+  background-color: #ff9a6c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+header nav a {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  padding: 32px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: #660c00;
+  border-radius: 10px;
+  padding: 16px 32px;
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 24px 80px 128px 80px;
+  position: relative;
+}
+
+h1,
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.paragrafo {
+  font-family: "Mountserrat Alternates", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.primary-button {
+  background-color: #ff725e;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+.primary-button:hover {
+  background-color: #660c00;
+}
+
+.terciary-button {
+  background-color: transparent;
+  font-family: "Mountserrat Alternates", sans-serif;
+  font-weight: 600;
+  color: #ff725e;
+  padding: 16px 32px;
+  text-underline-offset: 4px;
+}
+
+.terciary-button:hover {
+  background-color: transparent;
+  color: #660c00;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+#clinica {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 80px;
+}
+
+#clinica li {
+  margin-bottom: 16px;
+  margin-left: 32px;
+  font-family: "Mountserrat Alternates", sans-serif;
+  font-weight: 400;
+}
+
+#farmacia {
+  padding: 64px 80px;
+  text-align: center;
+  background-color: #ffe6da;
+}
+
+#farmacia img {
+  margin: 64px auto;
+  background-color: #ffffff;
+}
+
+#farmacia .paragrafo {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+#duvidas {
+  display: flex;
+  align-items: start;
+  gap: 64px;
+  padding: 64px 80px;
+}
+
+.duvida {
+  position: relative;
+}
+
+.duvida h3 {
+  font-family: "Mountserrat Alternates", sans-serif;
+  border: 2px solid #ff725e;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  padding: 24px;
+}
+
+.duvida img {
+  position: absolute;
+  top: 32px;
+  right: 24px;
+}
+
+.duvida .paragrafo {
+  border-right: 1px solid #ff725e;
+  border-bottom: 1px solid #ff725e;
+  border-left: 1px solid #ff725e;
+  border-radius: 0 0 10px 10px;
+  margin-top: -10px;
+  padding: 0 24px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.duvida.ativa .paragrafo {
+  height: fit-content;
+  opacity: 1;
+  padding: 24px;
+}
+
+footer {
+  background-color: #ffe6da;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 64px 80px;
+}
+
+footer img,
+footer .titulo {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+footer a {
+  color: #263138;
+  display: block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-family: "Mountserrat Alternates", sans-serif;
+}
+
+footer p {
+  margin-bottom: 16px;
+  font-family: "Mountserrat Alternates", sans-serif;
+}
+
+footer p a {
+  color: #263138;
+  text-decoration: none;
+  font-family: "Mountserrat Alternates", sans-serif;
+}
+
+#copyright {
+  background-color: #263138;
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+}
+
+#copyright a {
+  color: #ff9a6c;
+}
